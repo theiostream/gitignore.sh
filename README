@@ -1,13 +1,14 @@
 gitignore.sh
+Thanks to http://github.com/github/gitignore; All templates are form there.
 
 INSTALL:
 git clone git://github.com/theiostream/gitignore.sh.git
-cd gitignore
+cd gitignore.sh
+sudo chmod 777 ./setup.sh
 ./setup.sh
 
 USAGE:
-setup.sh will move gitignore.sh to /usr/bin, so to use the script all 
-you need is:
+setup.sh will get gitignore.sh ready for you. All you gotta do is to run:
 
 gitignore.sh [OPTION] [PARAMETER]
 
@@ -15,3 +16,8 @@ gitignore.sh [OPTION] [PARAMETER]
 Currently it makes a directory at ~/Library/, a directory only contained 
 on MacOSX. Seemed adequate to me to put it there, although it won't work 
 in other Linux distros. Just fork me and fix that issue!
+
+UNINSTALL:
+(note that uninstall.sh has NOT been tested, although I doubt bad things can happen...
+sudo chmod 777 ./uninstall.sh
+sudo ./uninstall.sh
