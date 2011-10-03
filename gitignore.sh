@@ -47,7 +47,7 @@ if [ "$1" = "-n" ]; then
 		
 		if [ $SUCCESSFUL = 1 ]; then
 			echo "Moved template $2.gitignore to `pwd`"
-			echo "OSX might hide your .gitignore files. But they are there."
+			echo "OSX might hide your .gitignore files on Finder. But they are there."
 		else
 			echo "No template $2 found."
 		fi
